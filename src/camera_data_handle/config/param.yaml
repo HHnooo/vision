@@ -1,0 +1,42 @@
+receive_data:
+  ros__parameters:
+    max_history_size: 3.0       #记录最大的历史步数
+    smoothing_factor: 0.2       #光滑因子
+    max_position_jump: 30.0     #最大跳转像素
+    min_time_interval: 0.03     #最小时间间隔 （ms）
+    pid_parameters_p: 1.0       #PID 比率
+    pid_parameters_i: 0.1       #PID 积分
+    pid_parameters_d: 0.2       #PID 微分
+    history_weight_factor: 0.5  #历史权重因子  0-1 值越大越相信当前速度
+    max_integral: 40.0         #积分上限
+    estimator_rate_: 0.07        #图像速度转换比率
+    estimator_dt_: 100.0          #最后转出的距离
+
+    nms_threshold_: 0.4         #nms最大抑制
+    confidence_threshold_: 0.5  #正确率最低值
+    detector: "../model/best.xml"
+
+# USB相机参数 — 换相机/镜头时改这里
+usb_camera:
+  horizon_x: 41.8              # 水平半视场角（度）
+  horizon_z: 33.9              # 垂直半视场角（度）
+  cam_pitch_deg: -60.0         # 安装俯仰角（度），负=向下
+  height_offset: 0.15          # 相机距无人机高度（米）
+  device_index: 2              # /dev/videoX 设备号
+
+# OpenMV相机参数
+openmv_camera:
+  horizon_x: 32.0              # 水平半视场角（度）
+  horizon_z: 23.0              # 垂直半视场角（度）
+  cam_pitch_deg: 45.0          # 安装俯仰角（度）
+  height_offset: 0.39          # 相机距无人机高度（米）
+
+
+
+
+
+
+
+
+
+

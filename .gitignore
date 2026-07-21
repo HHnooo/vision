@@ -1,0 +1,29 @@
+# 编译产物
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# ROS
+*.swp
+*.swo
+
+# 模型文件（太大，单独管理）
+*.bin
+*.onnx
+
+# 录制的视频
+vidios/
+
+# 测试临时文件
+test/__pycache__/
+
+# Claude 配置
+.claude/

@@ -1,0 +1,12 @@
+FPS_VISABLE_OPEN            FPS是否显示
+YOLOV8_DETECTOR_OFF         是否关闭YOLO检测器
+NO_IMAGE                    关闭imshow以节省资源
+DETECTION_OPENVINO_OPEN     是否使用Openvino加速处理
+RUN_THE_FUNCTION_BY_GPU     是否使用GPU加速图像的前置与后置处理
+KEY_POINT_TRACKING          是否在YOLO无法检测到时使用关键点检测
+PREDICT_OPEN                是否通过卡尔曼滤波预测目标位置
+
+colcon build --cmake-args '-DBUILD_ACCELERATE_GPU_WITH_GLSL=ON'
+
+# 不再使用 realsense-ros，改用 USB 相机驱动
+# ros2 run camera_data_handle receive_usb_camera

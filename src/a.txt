@@ -1,0 +1,6 @@
+# NUC 上执行
+cd ~/guojisai_new/nuc
+source /opt/ros/humble/setup.bash
+colcon build --packages-select camera_data_handle robot_interfaces --symlink-install
+source install/setup.bash
+ros2 run camera_data_handle calculate_publish
