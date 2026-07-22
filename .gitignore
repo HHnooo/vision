@@ -18,9 +18,25 @@ __pycache__/
 # 模型文件（太大，单独管理）
 *.bin
 *.onnx
+*.pt
 
-# 录制的视频
+# 视频
+*.mp4
+*.avi
 vidios/
+
+# 训练输出
+runs/
+
+# 数据集图片
+images/
+all/my_dataset/train/
+all/my_dataset/val/
+all/补拍/images_add/
+all/undetected_frames/
+all/labeled_videos/
+all/test_videos/
+all/model_openvino/*.bin
 
 # 测试临时文件
 test/__pycache__/

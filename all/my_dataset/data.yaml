@@ -1,0 +1,20 @@
+# YOLO 数据集配置
+# 路径相对于 data.yaml 所在目录
+
+path: C:/Users/Admin/Desktop/vision/all/my_dataset
+
+train: train/images
+val: val/images
+
+# 类别数量
+nc: 7
+
+# 类别名称
+names:
+  0: H          # 降落点
+  1: tent       # 帐篷
+  2: car        # 车辆
+  3: bridge     # 桥梁
+  4: pillbox    # 碉堡
+  5: tank       # 坦克
+  6: Red_cross  # 红十字

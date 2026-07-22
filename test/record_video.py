@@ -11,11 +11,11 @@ import sys
 import time
 
 # ==================== 配置参数 ====================
-DEVICE_INDEX = 2          # 摄像头设备号 (/dev/video2)
+DEVICE_INDEX = 0          # 摄像头设备号
 FRAME_WIDTH = 640         # 分辨率宽
 FRAME_HEIGHT = 480        # 分辨率高
 FPS = 30.0                # 帧率
-VIDEO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vidios")
+VIDEO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "all", "test_videos")
 # =================================================
 
 
